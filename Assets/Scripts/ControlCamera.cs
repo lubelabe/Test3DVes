@@ -2,17 +2,22 @@ using UnityEngine;
 
 public class ControlCamera : MonoBehaviour
 {
+    [SerializeField] private ControlUIToCursor myControlUICursos;
+    
     [SerializeField] private Transform targetPokemon;
     [SerializeField] private float speedMoveCam = 5;
     
     private void LateUpdate()
     {
-        if (Input.GetMouseButton(0))
+        if (!myControlUICursos.isOverUI)
         {
-            RotateCameraAroundTarget();
+            if (Input.GetMouseButton(0))
+            {
+                RotateCameraAroundTarget();
+            }
+            
+            ApproachingTheTarget();
         }
-        
-        ApproachingTheTarget();
     }
 
     private void RotateCameraAroundTarget()

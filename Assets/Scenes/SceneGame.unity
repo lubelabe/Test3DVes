@@ -1013,6 +1013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24676592e97ad6428e7f032597ed910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myControlUICursos: {fileID: 1732885347}
   targetPokemon: {fileID: 242333811}
   speedMoveCam: 200
 --- !u!45 &963194230
@@ -1597,6 +1598,7 @@ GameObject:
   - component: {fileID: 1732885344}
   - component: {fileID: 1732885346}
   - component: {fileID: 1732885345}
+  - component: {fileID: 1732885347}
   m_Layer: 5
   m_Name: PanelContainer
   m_TagString: Untagged
@@ -1632,13 +1634,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732885343}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1663,6 +1665,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732885343}
   m_CullTransparentMesh: 1
+--- !u!114 &1732885347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732885343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6150be3cb9c6791439f0abccbe46e6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOverUI: 0
 --- !u!1 &2033578397
 GameObject:
   m_ObjectHideFlags: 0
